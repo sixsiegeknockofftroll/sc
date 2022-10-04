@@ -1,5 +1,6 @@
 for i, v in pairs(game.Players:GetPlayers()) do
-    if v.Character and v.Character:FindFirstChild("Shirt") and v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Humanoid") and v.Team ~= game.Players.LocalPlayer.Team then
+    if v.Character and v.Character:FindFirstChild("Shirt") and v.Character.Humanoid.Health > 0 and
+        v.Character:FindFirstChild("Humanoid") then
         local v1 = v.Character.Humanoid
         local v2 = 0
         local v3 = 1
@@ -8,18 +9,20 @@ for i, v in pairs(game.Players:GetPlayers()) do
             ["LeftElbowAim"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
             ["DamageFallOf"] = 1.15,
             ["ShootRate"] = 670,
-            ["IgnoreProtection"] = false,
+            ["IgnoreProtection"] = true,
             ["EnableZeroing"] = true,
             ["MainCFrame"] = CFrame.new(0.5, -0.850000024, -0.75, 1, 0, 0, 0, 1, 0, 0, 0, 1),
             ["IncludeChamberedBullet"] = true,
             ["Zoom"] = 60,
             ["meleeAttack"] = function() end,
             ["MaxRecoilPower"] = 1.5,
-            ["SV_RightWristPos"] = CFrame.new(0, 0, 0.150000006, 1, 0, 0, 0, 0.939692616, -0.342020124, 0, 0.342020124,
+            ["SV_RightWristPos"] = CFrame.new(0, 0, 0.150000006, 1, 0, 0, 0, 0.939692616, -0.342020124, 0,
+                0.342020124,
                 0.939692616),
             ["ReloadAnim"] = function() end,
             ["SightAtt"] = "Holo A",
-            ["SV_GunPos"] = CFrame.new(-0.300000012, -0.200000003, -0.400000006, 1, 0, 0, 0, -4.37113883e-08, 1, 0, -1,
+            ["SV_GunPos"] = CFrame.new(-0.300000012, -0.200000003, -0.400000006, 1, 0, 0, 0, -4.37113883e-08, 1, 0,
+                -1,
                 -4.37113883e-08),
             ["BulletPenetration"] = 62.5,
             ["CanCheckMag"] = true,
@@ -31,7 +34,7 @@ for i, v in pairs(game.Players:GetPlayers()) do
             },
             ["MuzzleVelocity"] = 1250,
             ["EquipAnim"] = function() end,
-            ["CanBreachDoor"] = false,
+            ["CanBreachDoor"] = true,
             ["AmmoInGun"] = 28,
             ["camRecoil"] = {
                 ["camRecoilUp"] = {
@@ -58,7 +61,8 @@ for i, v in pairs(game.Players:GetPlayers()) do
             },
             ["LeftWristSprint"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
             ["MagCount"] = true,
-            ["RightWristSprint"] = CFrame.new(0, 0, 0.150000006, 1, 0, 0, 0, 0.939692616, -0.342020124, 0, 0.342020124,
+            ["RightWristSprint"] = CFrame.new(0, 0, 0.150000006, 1, 0, 0, 0, 0.939692616, -0.342020124, 0,
+                0.342020124,
                 0.939692616),
             ["AimInaccuracyStepAmount"] = 0.75,
             ["CurrentZero"] = 0,
@@ -66,13 +70,14 @@ for i, v in pairs(game.Players:GetPlayers()) do
                 -0.766044438, 0.642787635),
             ["RightElbowSprint"] = CFrame.new(0, -0.449999988, -0.25, 1, 0, 0, 0, 0.173648223, 0.98480773, 0, -
                 0.98480773, 0.173648223),
-            ["RainbowMode"] = false,
+            ["RainbowMode"] = true,
             ["LeftSprint"] = CFrame.new(1, 1, -0.600000024, 0.875426054, 0.408217907, 0.258819044, -0.46470207,
                 0.563511848, 0.683012664, 0.132970393, -0.718200803, 0.683012664),
             ["SV_RightArmPos"] = CFrame.new(-0.899999976, 1.25, -0.349999994, 1, 0, 0, 0, 0.866025388, 0.5, 0, -0.5,
                 0.866025388),
             ["CrosshairOffset"] = 0,
-            ["GunCFrame"] = CFrame.new(0.150000006, -0.200000003, 0.850000024, 1, 0, 0, 0, -4.37113883e-08, -1, 0, 1,
+            ["GunCFrame"] = CFrame.new(0.150000006, -0.200000003, 0.850000024, 1, 0, 0, 0, -4.37113883e-08, -1, 0, 1
+                ,
                 -4.37113883e-08),
             ["LeftWristAim"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
             ["SlideLock"] = false,
@@ -80,14 +85,16 @@ for i, v in pairs(game.Players:GetPlayers()) do
                 0.939692616),
             ["ShootType"] = 3,
             ["CanRun"] = true,
-            ["RightElbowAim"] = CFrame.new(0, -0.200000003, -0.25, 1, 0, 0, 0, 0.49999997, 0.866025448, 0, -0.866025448,
+            ["RightElbowAim"] = CFrame.new(0, -0.200000003, -0.25, 1, 0, 0, 0, 0.49999997, 0.866025448, 0,
+                -0.866025448,
                 0.49999997),
             ["Bullets"] = 1,
             ["EnableHUD"] = true,
             ["LeftAim"] = CFrame.new(1.60000002, 0.600000024, -0.850000024, 0.742403865, 0.346188635, 0.57357645,
                 -0.48102507, -0.320471406, 0.816034973, 0.466316849, -0.881732106, -0.0713938251),
             ["LeftElbowSprint"] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-            ["SV_LeftWristPos"] = CFrame.new(0, 0, 0, 0.965925813, 0, -0.258819044, 0, 1, 0, 0.258819044, 0, 0.965925813),
+            ["SV_LeftWristPos"] = CFrame.new(0, 0, 0, 0.965925813, 0, -0.258819044, 0, 1, 0, 0.258819044, 0,
+                0.965925813),
             ["SlideEx"] = CFrame.new(0, 0, -0.300000012, 1, 0, 0, 0, 1, 0, 0, 0, 1),
             ["Tracer"] = true,
             ["Jammed"] = false,
@@ -164,7 +171,8 @@ for i, v in pairs(game.Players:GetPlayers()) do
             },
             ["MaxSpread"] = 100,
             ["CrossHair"] = true,
-            ["SV_LeftElbowPos"] = CFrame.new(0, 0, -0.100000001, 1, 0, 0, 0, 0.965925813, 0.258819044, 0, -0.258819044,
+            ["SV_LeftElbowPos"] = CFrame.new(0, 0, -0.100000001, 1, 0, 0, 0, 0.965925813, 0.258819044, 0,
+                -0.258819044,
                 0.965925813),
             ["GunModelFixed"] = true,
             ["RandomTracer"] = {
@@ -224,8 +232,7 @@ for i, v in pairs(game.Players:GetPlayers()) do
         local r = game.Players.LocalPlayer.UserId
         local s = game.ReplicatedStorage.Skorpio_Engine.Events.AcessId:InvokeServer(r)
         local hitreg = s .. "-" .. game.Players.LocalPlayer.UserId
-        print(hitreg)
         local event = game:GetService("ReplicatedStorage")["Skorpio_Engine"].Events.Damage
-        event:FireServer(v1, v2, 2, v4, v5, v6, v7, hitreg, v9)
+        event:FireServer(v1, v2, v3, v4, v5, v6, v7, hitreg, v9)
     end
 end
